@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace WebApi.Controllers
+namespace Web.Api.Controllers
 {
     [Route("/api/ping")]
     [Route("/")]
