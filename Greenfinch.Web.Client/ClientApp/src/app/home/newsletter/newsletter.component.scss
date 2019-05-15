@@ -1,0 +1,9 @@
+.was-validated .form-control:invalid,
+.form-control.is-invalid {
+  background-image: none !important;
+}
+
+.placeholder {
+  color: #6c757d;
+  opacity: 1;
+}

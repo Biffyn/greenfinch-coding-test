@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28902.138
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api", "Web.Api\Web.Api.csproj", "{D7013CC5-5D03-49D8-AD62-E28380ED78EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Web.Api", "Greenfinch.Web.Api\Greenfinch.Web.Api.csproj", "{D7013CC5-5D03-49D8-AD62-E28380ED78EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{DE66459C-C852-4796-AB0D-B86FAE691C42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Core", "Greenfinch.Core\Greenfinch.Core.csproj", "{DE66459C-C852-4796-AB0D-B86FAE691C42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.Models", "Core.Models\Core.Models.csproj", "{6C6783B2-335A-4EE5-989A-B8D554D89E68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Core.Models", "Greenfinch.Core.Models\Greenfinch.Core.Models.csproj", "{6C6783B2-335A-4EE5-989A-B8D554D89E68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{7CA50E77-2F11-438E-9EB8-F32B79CFEAA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Database", "Greenfinch.Database\Greenfinch.Database.csproj", "{7CA50E77-2F11-438E-9EB8-F32B79CFEAA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{7E92361F-BA97-45C7-AAF8-65802B0DC272}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Interfaces", "Greenfinch.Interfaces\Greenfinch.Interfaces.csproj", "{7E92361F-BA97-45C7-AAF8-65802B0DC272}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{42FB164A-2FD5-410C-8258-4A6935D4D26A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Tests", "Greenfinch.Tests\Greenfinch.Tests.csproj", "{42FB164A-2FD5-410C-8258-4A6935D4D26A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Client", "Web.Client\Web.Client.csproj", "{A13CECBB-B822-40CA-B186-2BC4F0932774}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Greenfinch.Web.Client", "Greenfinch.Web.Client\Greenfinch.Web.Client.csproj", "{A13CECBB-B822-40CA-B186-2BC4F0932774}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

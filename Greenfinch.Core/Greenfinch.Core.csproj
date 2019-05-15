@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Greenfinch.Core.Models\Greenfinch.Core.Models.csproj" />
+    <ProjectReference Include="..\Greenfinch.Database\Greenfinch.Database.csproj" />
+    <ProjectReference Include="..\Greenfinch.Interfaces\Greenfinch.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
