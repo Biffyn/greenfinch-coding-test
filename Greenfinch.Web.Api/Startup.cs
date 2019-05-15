@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Swashbuckle.AspNetCore.Swagger;
 using Serilog;
+using System.Threading.Tasks;
+using System;
 
 namespace Greenfinch.Web.Api
 {
@@ -46,6 +48,8 @@ namespace Greenfinch.Web.Api
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new Info { Title = "Greenfinch Coding Test Web API", Version = "v1" });
             });
+
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,6 +72,25 @@ namespace Greenfinch.Web.Api
             app.UseHttpsRedirection();
             app.UseCors("CorsPolicy");
             app.UseMvc();
+            InitalizeDatabase(app);
+        }
+
+        private void InitalizeDatabase(IApplicationBuilder app)
+        {
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                try
+                {
+                    var context = serviceScope.ServiceProvider.GetService<ApiContext>();
+                    Task.Run(() => context.Database.MigrateAsync()).Wait();
+                    
+                }
+                catch (Exception ex)
+                {
+                    Log.Fatal(ex, "Can not InitalizeDatabase");
+                    throw;
+                }
+            }
         }
     }
 }
